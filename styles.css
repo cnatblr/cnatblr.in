@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 2rem;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav {
+    background-color: white;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+header li{
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: .8rem;
+
+}
+
+nav a{
+    padding: 0.5rem 2rem;
+}
+
+nav a:hover{
+    background-color: #ebeefe;
+}
+
+section{
+    padding: 3rem 0;
+}
+
+.we-are{
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.heading{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.line::after{
+    content: "";
+    width: 10rem;
+    height: .8rem;
+    background-color: #45e19f;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+
+
+.event-card h1 {
+    font-size: 2.5rem;
+}
+
+.upcoming-events{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.event-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 98rem;
+    margin-top: 3rem;
+    padding: 2rem 5rem;
+    background-color: #ebeefe;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: .8rem;
+}
+
+.event-card .date{
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.join{
+    background-color: #45e19f;
+    padding: 0.5rem 2rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: 4rem;
+}
+
+.social span{
+    padding: 0 1rem;
+}
+
+.card-wrapper{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box i {
+    font-size: 5rem;
+}
+
+
+.box:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #ebeefe   ;
+    padding: 4rem 4rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    border-radius: .8rem;
+}
+
+.box h2{
+    font-size: 1.5em;
+}
+
+.box-content{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.card:hover{
+    opacity: 1;
+}
+
+.hshadow:hover{
+    box-shadow: .5rem .5rem 2rem rgb(194, 216, 255)
+}
+
+.card{
+    opacity: 0.9;
+    width: 32rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.card i {
+    font-size: 3rem;
+}
+
+.card .card-img{
+    width: 100%;
+    height: 28rem;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+}
+
+.profile-img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -10rem;
+    z-index: 999;
+    border: 1rem solid #ebeef8;
+}
+
+.card h1{
+    font-size: 2.5rem;
+    color: #333;
+    margin: 1rem 0;
+}
+
+
+.job-title{
+    color: #777;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.about{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+}
+
+.support{
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.support .form{
+    background-color: #45e19f;
+    padding: 0.5rem 2rem;
+    margin-bottom: 2rem;
+    font-weight: lighter;
+}
+
+footer i{
+    font-size: 5rem;
+}
+
+footer span{
+    padding: 0 1rem;
+}
+
+.findus{
+    font-size: 3.5rem;
+    display: inline-flex;
+}
+
+@media screen and (min-width:700px){
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin: 2rem;
+    }
+    .box{
+        margin: 2rem;
+    }
+}

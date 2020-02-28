@@ -255,7 +255,7 @@ footer span{
     display: inline-flex;
 }
 
-@media screen and (min-width:700px){
+@media screen and (min-width:320px){
     .card-wrapper{
         flex-direction: row;
         flex-wrap: wrap;
@@ -267,5 +267,6 @@ footer span{
     }
     .box{
         margin: 2rem;
+        margin-top: 2rem;
     }
 }
